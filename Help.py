@@ -27,8 +27,8 @@ class HelpMod(loader.Module):
         "single_mod_header": "<b>⁉️ Info about</b> <u>{}</u>:",
         "single_cmd": "\n❕ <code>{}{}</code> 👉🏻 ",
         "undoc_cmd": "🤷 No docs",
-        "all_header": ' ❤️  <b>{} mods available:</b>',
-        "mod_tmpl": '\n🔺 <code>{}</code>',
+        "all_header": ' 🐼  <b>{} модов доступно:</b>',
+        "mod_tmpl": '\n🔸  <code>{}</code>',
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
         "args": "▪️ <b>Args are incorrect</b>",
@@ -176,7 +176,7 @@ class HelpMod(loader.Module):
                             tmp += mods_formatted[mod]
                             del mods_formatted[mod]
                     if tmp != "":
-                        reply += "\n\n<b><u>💛     " + cat + "</u></b>" + tmp
+                        reply += "\n\n<b><u> 📌     " + cat + "</u></b>" + tmp
 
                 if mods_formatted:
                     reply += "\n------"
@@ -191,7 +191,7 @@ class HelpMod(loader.Module):
                         tmp += mods_formatted[mod]
                         del mods_formatted[mod]
                 if tmp != "":
-                    reply += "\n<b><u>💛      " + category + "</u></b>" + tmp
+                    reply += "\n<b><u> 📌      " + category + "</u></b>" + tmp
 
             # reply += ("\n\n<b>1-Command Mods:</b>\n" + ' | '.join(one_command_mods_cmds)) if one_command_mods_cmds else ""
 
