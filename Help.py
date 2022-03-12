@@ -8,7 +8,7 @@
 
 # <3 title: Help
 # <3 pic: https://img.icons8.com/fluency/48/000000/chatbot.png
-# <3 desc: Милая и красивая помощь с Японией, лисичками, а также уровнями доступа к командам.
+# <3 desc: Красивая и прикольная помощь.
 
 
 import inspect
@@ -23,16 +23,16 @@ class HelpMod(loader.Module):
     """Beautiful help module with foxes and japan"""
     strings = {
         "name": "Help",
-        "bad_module": '<b>🦊 I don\'t know what</b> "<code>{}</code>" <b>is!</b>',
-        "single_mod_header": "<b>🦊 Info about</b> <u>{}</u>:",
-        "single_cmd": "\n🧊 <code>{}{}</code> 👉🏻 ",
-        "undoc_cmd": "🦊 No docs",
-        "all_header": '🦊 <b>{} mods available:</b>',
-        "mod_tmpl": '\n🇯🇵 <code>{}</code>',
+        "bad_module": '<b>⬛ I don\'t know what</b> "<code>{}</code>" <b>is!</b>',
+        "single_mod_header": "<b>🔳 Info about</b> <u>{}</u>:",
+        "single_cmd": "\n🔘 <code>{}{}</code> 👉🏻 ",
+        "undoc_cmd": "◼️ No docs",
+        "all_header": '◾ <b>{} mods available:</b>',
+        "mod_tmpl": '\n◼️ <code>{}</code>',
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
-        "args": "🦊 <b>Args are incorrect</b>",
-        "set_cat": "🦊 <b>{} -> {}</b>"
+        "args": "▪️ <b>Args are incorrect</b>",
+        "set_cat": "🔲 <b>{} -> {}</b>"
     }
 
     async def helpcatcmd(self, message):
@@ -176,7 +176,7 @@ class HelpMod(loader.Module):
                             tmp += mods_formatted[mod]
                             del mods_formatted[mod]
                     if tmp != "":
-                        reply += "\n\n<b><u>🔹 " + cat + "</u></b>" + tmp
+                        reply += "\n\n<b><u>🗨️ " + cat + "</u></b>" + tmp
 
                 if mods_formatted:
                     reply += "\n➖➖➖➖➖"
@@ -191,7 +191,7 @@ class HelpMod(loader.Module):
                         tmp += mods_formatted[mod]
                         del mods_formatted[mod]
                 if tmp != "":
-                    reply += "\n<b><u>🔹 " + category + "</u></b>" + tmp
+                    reply += "\n<b><u>🗨️ " + category + "</u></b>" + tmp
 
             # reply += ("\n\n<b>1-Command Mods:</b>\n" + ' | '.join(one_command_mods_cmds)) if one_command_mods_cmds else ""
 
