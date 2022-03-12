@@ -176,10 +176,10 @@ class HelpMod(loader.Module):
                             tmp += mods_formatted[mod]
                             del mods_formatted[mod]
                     if tmp != "":
-                        reply += "\n\n<b><u> 📌     " + cat + "</u></b>" + tmp
+                        reply += "\n\n<b><u>📌 " + cat + "</u></b>" + tmp
 
                 if mods_formatted:
-                    reply += "\n------"
+                    reply += "\n  ——Без категорий———"
 
                 for _, mod_formatted in mods_formatted.items():
                     if 'hide' not in cats or _ not in cats['hide']:
@@ -191,7 +191,7 @@ class HelpMod(loader.Module):
                         tmp += mods_formatted[mod]
                         del mods_formatted[mod]
                 if tmp != "":
-                    reply += "\n<b><u> 📌      " + category + "</u></b>" + tmp
+                    reply += "\n<b><u>📌 " + category + "</u></b>" + tmp
 
             # reply += ("\n\n<b>1-Command Mods:</b>\n" + ' | '.join(one_command_mods_cmds)) if one_command_mods_cmds else ""
 
