@@ -20,15 +20,15 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class HelpMod(loader.Module):
-    """Beautiful help module with foxes and japan"""
+    """Help by ToXicUse"""
     strings = {
-        "name": "Help",
-        "bad_module": '<b>⬛ I don\'t know what</b> "<code>{}</code>" <b>is!</b>',
+        "name": "HelP",
+        "bad_module": '<b>😔 I don\'t know what</b> "<code>{}</code>" <b>is!</b>',
         "single_mod_header": "<b>⁉️ Info about</b> <u>{}</u>:",
         "single_cmd": "\n❕ <code>{}{}</code> 👉🏻 ",
         "undoc_cmd": "🤷 No docs",
-        "all_header": '◾ <b>{} mods available:</b>',
-        "mod_tmpl": '\n🔳 <code>{}</code>',
+        "all_header": ' ♊  <b>{} mods available:</b>',
+        "mod_tmpl": '\n▪️ <code>{}</code>',
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
         "args": "▪️ <b>Args are incorrect</b>",
@@ -176,10 +176,10 @@ class HelpMod(loader.Module):
                             tmp += mods_formatted[mod]
                             del mods_formatted[mod]
                     if tmp != "":
-                        reply += "\n\n<b><u> 💠  " + cat + "</u></b>" + tmp
+                        reply += "\n\n<b><u>    👁️ " + cat + "</u></b>" + tmp
 
                 if mods_formatted:
-                    reply += "\n➕➖➕➖➕➖➕➖➕"
+                    reply += "\n▫️▪️▫️▪️▫️▪️"
 
                 for _, mod_formatted in mods_formatted.items():
                     if 'hide' not in cats or _ not in cats['hide']:
@@ -191,7 +191,7 @@ class HelpMod(loader.Module):
                         tmp += mods_formatted[mod]
                         del mods_formatted[mod]
                 if tmp != "":
-                    reply += "\n<b><u> 💠  " + category + "</u></b>" + tmp
+                    reply += "\n<b><u>    👁️ " + category + "</u></b>" + tmp
 
             # reply += ("\n\n<b>1-Command Mods:</b>\n" + ' | '.join(one_command_mods_cmds)) if one_command_mods_cmds else ""
 
