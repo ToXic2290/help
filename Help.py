@@ -28,7 +28,7 @@ class HelpMod(loader.Module):
     }
 
     async def helpcatcmd(self, message):
-        """<module>: <category> - Set category for module"""
+        """<module>: <category> - Создать категорию"""
         args = utils.get_args_raw(message).split(':')
         if len(args) != 2:
             await utils.answer(message, self.strings('args', message))
