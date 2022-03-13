@@ -171,7 +171,7 @@ class HelpMod(loader.Module):
                         reply += "\n\n<b><u>📌" + cat + "</u></b>" + tmp
 
                 if mods_formatted:
-                    reply += "\n  ——Без категорий———"
+                    reply += "\n      ——Без категорий———"
 
                 for _, mod_formatted in mods_formatted.items():
                     if 'hide' not in cats or _ not in cats['hide']:
